@@ -22,7 +22,7 @@ node {
       def resourceGroup = '<my_resource>'
       def webAppName = '<Azuredemmm>'
       // login Azure
-      withCredentials([usernamePassword(credentialsId: 'c63761b5-6a41-44ae-b5d9-bb47f0d03f47', passwordVariable: ' XXj8Q~b.wTDBcq_8PP9s3J72vN5nT2A6Yw9ZGaY', usernameVariable: '9a3398f8-c38b-460f-a78c-713b02f27526')]) {
+      withCredentials([usernamePassword(credentialsId: '9a3398f8-c38b-460f-a78c-713b02f27526', passwordVariable: ' XXj8Q~b.wTDBcq_8PP9s3J72vN5nT2A6Yw9ZGaY', usernameVariable: '9a3398f8-c38b-460f-a78c-713b02f27526')]) {
        sh '''
           az login --service-principal -u $9a3398f8-c38b-460f-a78c-713b02f27526 -p $ XXj8Q~b.wTDBcq_8PP9s3J72vN5nT2A6Yw9ZGaYj -t $e21a08cd-c175-4061-93ab-754d019a3ec8
           az account set -s $AZURE_SUBSCRIPTION_ID
