@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = '<my_resource>'
-      def webAppName = '<Azuredemmm>'
+      def webAppName = '<Azuredm>'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'service_principal', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
