@@ -8,8 +8,8 @@ def getFtpPublishProfile(def publishProfilesJson) {
 }
 
 node {
-  withEnv(['AZURE_SUBSCRIPTION_ID=<subscription_id>',
-        'AZURE_TENANT_ID=<tenant_id>']) {
+  withEnv(['AZURE_SUBSCRIPTION_ID=<09596d8b-933e-4093-a627-78cef0237f46>',
+        'AZURE_TENANT_ID=<e21a08cd-c175-4061-93ab-754d019a3ec8>']) {
     stage('init') {
       checkout scm
     }
